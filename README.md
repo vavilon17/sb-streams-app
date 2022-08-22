@@ -30,3 +30,9 @@ How to run (refer to the documentaion above):
 List of active connectors: `curl 127.0.0.1:8083/connectors`
 
 ### Kafka
+
+## App
+Retrieve all denormalized data about the project
+```
+http://localhost:8080/project/<PROJECT_UUID>
+```
