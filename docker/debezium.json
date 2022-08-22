@@ -1,0 +1,19 @@
+{
+  "name": "smartbrick-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "tasks.max": "1",
+    "plugin.name": "wal2json",
+    "database.hostname": "db",
+    "database.port": "5432",
+    "database.user": "smartbrick",
+    "database.password": "smartbrick",
+    "database.dbname": "smartbrick_db",
+    "database.server.name": "SMARTBRICK",
+    "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "key.converter.schemas.enable": "false",
+    "value.converter.schemas.enable": "false",
+    "snapshot.mode": "always"
+  }
+}

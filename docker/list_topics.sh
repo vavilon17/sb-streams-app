@@ -1,0 +1,1 @@
+docker exec -it $(docker ps | grep docker_kafka | awk '{print $1}') /kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
